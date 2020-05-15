@@ -23,18 +23,30 @@
     "expo-font": "~8.1.0",
     "expo-linking": "^1.0.1",
     "expo-splash-screen": "^0.2.3",
+    "expo-svg-uri": "^1.1.0",
     "expo-web-browser": "~8.2.0",
+    "konva": "^6.0.0",
     "react": "~16.9.0",
     "react-dom": "~16.9.0",
+    "react-konva": "^16.13.0-3",
     "react-native": "https://github.com/expo/react-native/archive/sdk-37.0.1.tar.gz",
     "react-native-gesture-handler": "~1.6.0",
     "react-native-safe-area-context": "0.7.3",
     "react-native-screens": "~2.2.0",
-    "react-native-web": "~0.11.7"
+    "react-native-svg": "11.0.1",
+    "react-native-svg-uri": "^1.2.3",
+    "react-native-web": "~0.11.7",
+    "react-native-webview": "8.1.1",
+    "use-image": "^1.0.5"
   },
   "devDependencies": {
     "@babel/core": "^7.8.6",
+    "@typescript-eslint/eslint-plugin": "^2.33.0",
+    "@typescript-eslint/parser": "^2.33.0",
     "babel-preset-expo": "~8.1.0",
+    "eslint": "^7.0.0",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^4.0.2",
     "jest-expo": "~37.0.0"
   },
   "private": true
