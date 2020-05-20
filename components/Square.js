@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
+import React from 'react';
 import { Text, View, TouchableOpacity, Image} from 'react-native';
 
 export function Square(pessoa, adiciona, i) {
@@ -39,9 +38,24 @@ export function Square(pessoa, adiciona, i) {
 		borderWidth: 1,
 	}
 
+	const nStyle = {
+		fontSize: 9,
+		textAlign: 'center',
+		width: '100%',
+		borderRadius: 5, 
+		// height: 40,
+		borderColor: 'grey',
+		backgroundColor: 'white',
+		borderWidth: 1,		
+	}
+
+	const avatar = <Image source={{uri: 'https://api.adorable.io/avatars/80/'+i.toString()}} style = {iStyle} />;
+	let nome   = <Text numberOfLines={2} adjustsFontSizeToFit style={nStyle}>{pessoa.nome}</Text>
+
 	return  <TouchableOpacity onPress={() => adiciona(i)}> 
 				<View style={sqStyle}>
-					<Image source={{uri: 'https://api.adorable.io/avatars/80/'+i.toString()}} style = {iStyle} />
+					{pessoa.nome.length > 0 ? nome : <></>}
+					{avatar}
 					<Text style={tStyle}>{pessoa.count}</Text>
 				</View>
 			</TouchableOpacity>;
